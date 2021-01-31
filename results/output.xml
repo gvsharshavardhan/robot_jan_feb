@@ -1,64 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210131 16:50:03.411" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210131 17:55:20.215" rpa="false">
 <suite id="s1" name="Variables" source="C:\Users\Harsha\PycharmProjects\robot_proj\pracitce\variables.robot">
 <test id="s1-t1" name="testcase1">
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
 <arguments>
-<arg>type($fload_num)</arg>
+<arg>datetime.date.today()</arg>
 </arguments>
 <assign>
-<var>${type_xyz}</var>
+<var>${eval}</var>
 </assign>
-<msg timestamp="20210131 16:50:03.431" level="INFO">${type_xyz} = &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20210131 16:50:03.429" endtime="20210131 16:50:03.431"></status>
-</kw>
-<kw name="Convert To Integer" library="BuiltIn">
-<doc>Converts the given item to an integer number.</doc>
-<arguments>
-<arg>${abc}</arg>
-</arguments>
-<assign>
-<var>${flag}</var>
-</assign>
-<msg timestamp="20210131 16:50:03.432" level="INFO">${flag} = 100</msg>
-<status status="PASS" starttime="20210131 16:50:03.432" endtime="20210131 16:50:03.432"></status>
-</kw>
-<kw name="Evaluate" library="BuiltIn">
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<arguments>
-<arg>type($flag)</arg>
-</arguments>
-<assign>
-<var>${flag_type}</var>
-</assign>
-<msg timestamp="20210131 16:50:03.432" level="INFO">${flag_type} = &lt;class 'int'&gt;</msg>
-<status status="PASS" starttime="20210131 16:50:03.432" endtime="20210131 16:50:03.432"></status>
+<msg timestamp="20210131 17:55:20.234" level="INFO">${eval} = 2021-01-31</msg>
+<status status="PASS" starttime="20210131 17:55:20.234" endtime="20210131 17:55:20.234"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>${flag_type}</arg>
+<arg>\n\n\t\t${eval}\n\n</arg>
 </arguments>
-<status status="PASS" starttime="20210131 16:50:03.433" endtime="20210131 16:50:03.433"></status>
+<status status="PASS" starttime="20210131 17:55:20.234" endtime="20210131 17:55:20.235"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
 <arguments>
-<arg>${abc}</arg>
+<arg>key1=apple</arg>
+<arg>key2=banana</arg>
 </arguments>
-<status status="PASS" starttime="20210131 16:50:03.434" endtime="20210131 16:50:03.434"></status>
+<assign>
+<var>&amp;{dict123}</var>
+</assign>
+<msg timestamp="20210131 17:55:20.235" level="INFO">&amp;{dict123} = { key1=apple | key2=banana }</msg>
+<status status="PASS" starttime="20210131 17:55:20.235" endtime="20210131 17:55:20.235"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
 <arguments>
-<arg>${fload_num}</arg>
+<arg>&amp;{dict123}</arg>
 </arguments>
-<status status="PASS" starttime="20210131 16:50:03.434" endtime="20210131 16:50:03.435"></status>
+<msg timestamp="20210131 17:55:20.236" level="INFO">key1=apple</msg>
+<msg timestamp="20210131 17:55:20.236" level="INFO">key2=banana</msg>
+<status status="PASS" starttime="20210131 17:55:20.236" endtime="20210131 17:55:20.236"></status>
 </kw>
-<status status="PASS" starttime="20210131 16:50:03.428" endtime="20210131 16:50:03.435" critical="yes"></status>
+<status status="PASS" starttime="20210131 17:55:20.233" endtime="20210131 17:55:20.236" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210131 16:50:03.413" endtime="20210131 16:50:03.436"></status>
+<status status="PASS" starttime="20210131 17:55:20.217" endtime="20210131 17:55:20.238"></status>
 </suite>
 <statistics>
 <total>
