@@ -1,77 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210131 18:05:08.514" rpa="false">
-<suite id="s1" name="Variables" source="C:\Users\Harsha\PycharmProjects\robot_proj\pracitce\variables.robot">
-<test id="s1-t1" name="testcase1">
-<kw name="Evaluate" library="BuiltIn">
-<doc>Evaluates the given expression in Python and returns the result.</doc>
+<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210131 18:19:24.125" rpa="false">
+<suite id="s1" name="Conditions" source="C:\Users\Harsha\PycharmProjects\robot_proj\pracitce\conditions.robot">
+<test id="s1-t1" name="testcase_name">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
-<arg>datetime.date.today()</arg>
+<arg>'${student}'=='harshavardhan'</arg>
+<arg>print_good_morning</arg>
+<arg>ELSE IF</arg>
+<arg>'${student}'=='padma'</arg>
+<arg>print_good_bight</arg>
+<arg>ELSE</arg>
+<arg>print_bye</arg>
 </arguments>
-<assign>
-<var>${eval}</var>
-</assign>
-<msg timestamp="20210131 18:05:08.532" level="INFO">${eval} = 2021-01-31</msg>
-<status status="PASS" starttime="20210131 18:05:08.532" endtime="20210131 18:05:08.532"></status>
+<kw name="print_bye">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n\n\t\thello! bye!!\n\</arg>
+</arguments>
+<status status="PASS" starttime="20210131 18:19:24.143" endtime="20210131 18:19:24.143"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>\n\n\t\t${eval}\n\n</arg>
+<arg>\t\ti'm taking robot sessions.\n\n</arg>
 </arguments>
-<status status="PASS" starttime="20210131 18:05:08.533" endtime="20210131 18:05:08.533"></status>
+<status status="PASS" starttime="20210131 18:19:24.144" endtime="20210131 18:19:24.144"></status>
 </kw>
-<kw name="Create Dictionary" library="BuiltIn">
-<doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<arguments>
-<arg>key1=apple</arg>
-<arg>key2=banana</arg>
-</arguments>
-<assign>
-<var>&amp;{dict123}</var>
-</assign>
-<msg timestamp="20210131 18:05:08.533" level="INFO">&amp;{dict123} = { key1=apple | key2=banana }</msg>
-<status status="PASS" starttime="20210131 18:05:08.533" endtime="20210131 18:05:08.534"></status>
+<status status="PASS" starttime="20210131 18:19:24.143" endtime="20210131 18:19:24.144"></status>
 </kw>
-<kw name="Log Many" library="BuiltIn">
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<arguments>
-<arg>&amp;{dict123}</arg>
-</arguments>
-<msg timestamp="20210131 18:05:08.534" level="INFO">key1=apple</msg>
-<msg timestamp="20210131 18:05:08.534" level="INFO">key2=banana</msg>
-<status status="PASS" starttime="20210131 18:05:08.534" endtime="20210131 18:05:08.534"></status>
+<status status="PASS" starttime="20210131 18:19:24.143" endtime="20210131 18:19:24.144"></status>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>C:\\Users\\Harsha\\PycharmProjects\\robot_proj\\pracitce</arg>
-</arguments>
-<status status="PASS" starttime="20210131 18:05:08.535" endtime="20210131 18:05:08.535"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>\n\n\t\t${EMPTY}\n\n</arg>
-</arguments>
-<status status="PASS" starttime="20210131 18:05:08.535" endtime="20210131 18:05:08.536"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${False}</arg>
-</arguments>
-<status status="PASS" starttime="20210131 18:05:08.536" endtime="20210131 18:05:08.536"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>${True}</arg>
-</arguments>
-<status status="PASS" starttime="20210131 18:05:08.537" endtime="20210131 18:05:08.537"></status>
-</kw>
-<status status="PASS" starttime="20210131 18:05:08.531" endtime="20210131 18:05:08.537" critical="yes"></status>
+<status status="PASS" starttime="20210131 18:19:24.142" endtime="20210131 18:19:24.144" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210131 18:05:08.516" endtime="20210131 18:05:08.538"></status>
+<status status="PASS" starttime="20210131 18:19:24.127" endtime="20210131 18:19:24.145"></status>
 </suite>
 <statistics>
 <total>
@@ -81,7 +44,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Variables">Variables</stat>
+<stat pass="1" fail="0" id="s1" name="Conditions">Conditions</stat>
 </suite>
 </statistics>
 <errors>
