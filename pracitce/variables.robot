@@ -36,6 +36,8 @@ testcase1
 #    log to console      ${b}
 #    log to console      ${c}
 
+
+#evaluate  is for writing python code inside robot file
     ${eval}     evaluate    datetime.date.today()
     log to console      \n\n\t\t${eval}\n\n
 
@@ -44,5 +46,10 @@ testcase1
     ...         key2=banana
 
     log many      &{dict123}
+
+    log to console      ${CURDIR}
+    log to console      \n\n\t\t${EMPTY}\n\n
+    log to console      ${False}
+    log to console      ${True}
 
 *** Keywords ***
