@@ -1,127 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210202 15:34:14.362" rpa="false">
-<suite id="s1" name="setupTeardown" source="C:\Users\Harsha\PycharmProjects\robot_proj\selenium_proj\setupTeardown.robot">
-<kw name="beforeSuite" type="setup">
+<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210202 16:07:09.032" rpa="false">
+<suite id="s1" name="Var" source="C:\Users\Harsha\PycharmProjects\robot_proj\selenium_proj\var.robot">
+<test id="s1-t1" name="testcase123">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>\n\n\t\tbefore suite keyword\n</arg>
+<arg>\n\n\t\t${name}\n</arg>
 </arguments>
-<status status="PASS" starttime="20210202 15:34:14.381" endtime="20210202 15:34:14.382"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.381" endtime="20210202 15:34:14.382"></status>
-</kw>
-<test id="s1-t1" name="testCase1">
-<kw name="beforetest" type="setup">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>\n\n\t\tbefore test keyword\n</arg>
-</arguments>
-<status status="PASS" starttime="20210202 15:34:14.382" endtime="20210202 15:34:14.383"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.382" endtime="20210202 15:34:14.383"></status>
+<status status="PASS" starttime="20210202 16:07:09.050" endtime="20210202 16:07:09.050"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>\n\n\t\tbtest case 1\n</arg>
+<arg>\n\n\t\t${marks}\n</arg>
 </arguments>
-<status status="PASS" starttime="20210202 15:34:14.383" endtime="20210202 15:34:14.383"></status>
+<status status="PASS" starttime="20210202 16:07:09.051" endtime="20210202 16:07:09.051"></status>
 </kw>
-<kw name="aftertest" type="teardown">
+<kw name="keyword1">
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<assign>
+<var>${ret}</var>
+</assign>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
-<arg>\n\n\t\tafter test keyword\n</arg>
+<arg>\n\n\t\t${name}+100\n</arg>
 </arguments>
-<status status="PASS" starttime="20210202 15:34:14.384" endtime="20210202 15:34:14.385"></status>
+<status status="PASS" starttime="20210202 16:07:09.051" endtime="20210202 16:07:09.052"></status>
 </kw>
-<status status="PASS" starttime="20210202 15:34:14.384" endtime="20210202 15:34:14.385"></status>
+<msg timestamp="20210202 16:07:09.052" level="INFO">${ret} = i'm from keyword 1</msg>
+<status status="PASS" starttime="20210202 16:07:09.051" endtime="20210202 16:07:09.052"></status>
 </kw>
-<status status="PASS" starttime="20210202 15:34:14.382" endtime="20210202 15:34:14.385" critical="yes"></status>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n\n\t\t${ret}\n</arg>
+</arguments>
+<status status="PASS" starttime="20210202 16:07:09.052" endtime="20210202 16:07:09.052"></status>
+</kw>
+<status status="PASS" starttime="20210202 16:07:09.049" endtime="20210202 16:07:09.053" critical="yes"></status>
 </test>
-<test id="s1-t2" name="testCase2">
-<kw name="beforetest" type="setup">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>\n\n\t\tbefore test keyword\n</arg>
-</arguments>
-<status status="PASS" starttime="20210202 15:34:14.386" endtime="20210202 15:34:14.386"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.386" endtime="20210202 15:34:14.386"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>\n\n\t\tbtest case 2\n</arg>
-</arguments>
-<status status="PASS" starttime="20210202 15:34:14.386" endtime="20210202 15:34:14.387"></status>
-</kw>
-<kw name="aftertest" type="teardown">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>\n\n\t\tafter test keyword\n</arg>
-</arguments>
-<status status="PASS" starttime="20210202 15:34:14.387" endtime="20210202 15:34:14.388"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.387" endtime="20210202 15:34:14.388"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.386" endtime="20210202 15:34:14.388" critical="yes"></status>
-</test>
-<test id="s1-t3" name="testCase3">
-<kw name="beforetest" type="setup">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>\n\n\t\tbefore test keyword\n</arg>
-</arguments>
-<status status="PASS" starttime="20210202 15:34:14.389" endtime="20210202 15:34:14.390"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.389" endtime="20210202 15:34:14.390"></status>
-</kw>
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>\n\n\t\tbtest case 3\n</arg>
-</arguments>
-<status status="PASS" starttime="20210202 15:34:14.390" endtime="20210202 15:34:14.390"></status>
-</kw>
-<kw name="aftertest" type="teardown">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>\n\n\t\tafter test keyword\n</arg>
-</arguments>
-<status status="PASS" starttime="20210202 15:34:14.391" endtime="20210202 15:34:14.391"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.390" endtime="20210202 15:34:14.391"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.389" endtime="20210202 15:34:14.391" critical="yes"></status>
-</test>
-<kw name="afterSuite" type="teardown">
-<kw name="Log To Console" library="BuiltIn">
-<doc>Logs the given message to the console.</doc>
-<arguments>
-<arg>\n\n\t\tafter suite keyword\n</arg>
-</arguments>
-<status status="PASS" starttime="20210202 15:34:14.392" endtime="20210202 15:34:14.392"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.392" endtime="20210202 15:34:14.392"></status>
-</kw>
-<status status="PASS" starttime="20210202 15:34:14.363" endtime="20210202 15:34:14.392"></status>
+<status status="PASS" starttime="20210202 16:07:09.034" endtime="20210202 16:07:09.054"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" id="s1" name="setupTeardown">setupTeardown</stat>
+<stat pass="1" fail="0" id="s1" name="Var">Var</stat>
 </suite>
 </statistics>
 <errors>

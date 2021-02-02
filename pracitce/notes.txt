@@ -4,8 +4,13 @@ library
 setup
 teardown
 
-variables through command line
+variables through command line:
+robot -v name:harsha  -v marks:450  selenium_proj/var.robot
 
-tags
+
+tags:
+------
+Should be in first line of the testcase.
+[Tags]  <tag name>
 
 datadriven using csv and template

@@ -1,6 +1,6 @@
 *** Settings ***
-Library         SeleniumLibrary
-Library         name
+Library     Marks.py
+Library     Marks
 
 
 *** Variables ***
@@ -8,8 +8,8 @@ Library         name
 
 *** Test Cases ***
 testcase123
-    ${result}=      pythonm
-    log to console      ${result}
+    ${marks}=           get_maths_marks
+    log to console          ${marks}
 
 *** Keywords ***
 

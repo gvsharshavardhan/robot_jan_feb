@@ -6,5 +6,5 @@ def getSalary():
 
 
 class Marks:
-    def getMathsMarks(self):
+    def get_maths_marks(self):
         return 570
