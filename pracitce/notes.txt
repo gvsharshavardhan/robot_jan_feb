@@ -1,10 +1,12 @@
-resources
-library
+resources : to load other robot files
+library : to load py files
+varibles : to load variables from .py file
 
 setup
 teardown
 
 variables through command line:
+----------------------------------
 robot -v name:harsha  -v marks:450  selenium_proj/var.robot
 
 
@@ -13,4 +15,5 @@ tags:
 Should be in first line of the testcase.
 [Tags]  <tag name>
 
-datadriven using csv and template
+datadriven using template:
+---------------------------
