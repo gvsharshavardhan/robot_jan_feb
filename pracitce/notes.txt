@@ -1,0 +1,11 @@
+resources
+library
+
+setup
+teardown
+
+variables through command line
+
+tags
+
+datadriven using csv and template

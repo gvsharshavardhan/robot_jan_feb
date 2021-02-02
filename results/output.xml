@@ -1,40 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210131 18:39:42.249" rpa="false">
-<suite id="s1" name="Selenium First" source="C:\Users\Harsha\PycharmProjects\robot_proj\selenium_proj\selenium_first.robot">
-<test id="s1-t1" name="testcase123">
-<kw name="pythonm">
+<robot generator="Robot 3.2.2 (Python 3.8.7 on win32)" generated="20210131 19:41:49.578" rpa="false">
+<suite id="s1" name="Second" source="C:\Users\Harsha\PycharmProjects\robot_proj\selenium_proj\second.robot">
+<test id="s1-t1" name="testcasexyz">
+<kw name="Get Sales Performance Feedback" library="name">
+<arguments>
+<arg>100</arg>
+<arg>500</arg>
+</arguments>
 <assign>
-<var>${result}=</var>
+<var>${readme}</var>
 </assign>
-<msg timestamp="20210131 18:39:42.379" level="FAIL">No keyword with name 'pythonm' found.</msg>
-<status status="FAIL" starttime="20210131 18:39:42.379" endtime="20210131 18:39:42.379"></status>
+<msg timestamp="20210131 19:41:49.596" level="INFO">${readme} = The boss wants to see you...</msg>
+<status status="PASS" starttime="20210131 19:41:49.596" endtime="20210131 19:41:49.596"></status>
 </kw>
-<status status="FAIL" starttime="20210131 18:39:42.377" endtime="20210131 18:39:42.380" critical="yes">No keyword with name 'pythonm' found.</status>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${readme}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 19:41:49.597" endtime="20210131 19:41:49.597"></status>
+</kw>
+<status status="PASS" starttime="20210131 19:41:49.596" endtime="20210131 19:41:49.597" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20210131 18:39:42.251" endtime="20210131 18:39:42.381"></status>
+<test id="s1-t2" name="testme123">
+<kw name="Read Me" library="teaa">
+<arguments>
+<arg>harsha</arg>
+<arg>50</arg>
+</arguments>
+<assign>
+<var>${rsult}</var>
+</assign>
+<msg timestamp="20210131 19:41:49.599" level="INFO">${rsult} = harsha500lovely!</msg>
+<status status="PASS" starttime="20210131 19:41:49.598" endtime="20210131 19:41:49.599"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${rsult}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 19:41:49.599" endtime="20210131 19:41:49.599"></status>
+</kw>
+<status status="PASS" starttime="20210131 19:41:49.598" endtime="20210131 19:41:49.599" critical="yes"></status>
+</test>
+<test id="s1-t3" name="testStudent">
+<kw name="Maths Marks" library="teaa.Student">
+<assign>
+<var>${marks}</var>
+</assign>
+<msg timestamp="20210131 19:41:49.600" level="INFO">${marks} = 500</msg>
+<status status="PASS" starttime="20210131 19:41:49.600" endtime="20210131 19:41:49.600"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${marks}</arg>
+</arguments>
+<status status="PASS" starttime="20210131 19:41:49.600" endtime="20210131 19:41:49.600"></status>
+</kw>
+<status status="PASS" starttime="20210131 19:41:49.600" endtime="20210131 19:41:49.600" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210131 19:41:49.580" endtime="20210131 19:41:49.601"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Selenium First">Selenium First</stat>
+<stat pass="3" fail="0" id="s1" name="Second">Second</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210131 18:39:42.375" level="ERROR">Error in file 'C:\Users\Harsha\PycharmProjects\robot_proj\selenium_proj\selenium_first.robot' on line 3: Importing test library '../name' failed: ModuleNotFoundError: No module named '.'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\Harsha\PycharmProjects\robot_proj\venv\Scripts\robot.exe
-  C:\Users\Harsha\AppData\Local\Programs\Python\Python38\python38.zip
-  C:\Users\Harsha\AppData\Local\Programs\Python\Python38\DLLs
-  C:\Users\Harsha\AppData\Local\Programs\Python\Python38\lib
-  C:\Users\Harsha\AppData\Local\Programs\Python\Python38
-  c:\users\harsha\pycharmprojects\robot_proj\venv
-  c:\users\harsha\pycharmprojects\robot_proj\venv\lib\site-packages</msg>
 </errors>
 </robot>

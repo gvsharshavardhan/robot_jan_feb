@@ -1,6 +1,6 @@
 *** Settings ***
-Library  SeleniumLibrary
-Library  ../name
+Library         SeleniumLibrary
+Library         name
 
 
 *** Variables ***
